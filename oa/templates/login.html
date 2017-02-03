@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tell me who you are</title>
+</head>
+<body>
+<p>Input who you are:</p>
+<form method="post" action="login">
+    {% csrf_token %}
+   <input type="text" name="user" />
+    <input type="submit" value="ok" />
+</form>
+
+
+</body>
+</html>

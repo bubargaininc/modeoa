@@ -1,0 +1,1 @@
+uwsgi --http :8080 --chdir /var/www/modeOa/  --module modeOa.wsgi

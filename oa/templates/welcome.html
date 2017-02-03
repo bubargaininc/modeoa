@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/doc.min.css" >
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MODE OA for Operation Dep</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+<div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../" class="navbar-brand">MODE OA</a>
+    </div>
+    <nav id="bs-navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li >
+          <a href="/" onclick="">Home</a>
+        </li>
+        <li>
+          <a href="/addnew" onclick="">Add</a>
+		</li>
+          <li >
+          <a href="/finish" onclick="">Finish</a>
+        </li>
+          <li>
+              <a href="/login" onclick="javascript:document.cookie='u='" >logout</a>
+          </li>
+      </ul>
+    </nav>
+</header>
+<!-- Docs page layout -->
+    <div class="bs-docs-header" id="content" tabindex="-1">
+      <div class="container">
+        <h1> daily task</h1>
+       <p> Today is
+         <script type="text/javascript">
+ 			var today = new Date();
+ 			var day = today.getDate();
+ 			var month = today.getMonth()+1;
+ 			var year = today.getFullYear();
+ 			document.write(year+"-"+month+"-"+day);
+		</script>, Have a nice day
+       </p>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <h2>试用指南 </h2>
+        <p>
+            <ul>1. 每日检查自己要做的工作</ul>
+            <ul>2. 及时维护task，确保各项工作均被记录</ul>
+            <ul>3. 如任务不能按时完成，需邮件说明原因，发送到daniel.ma@whatsmode.com</ul>
+            <ul>4. 确保任务完成后，才标记finish</ul>
+            <ul>5. 重复性任务请按月添加，不要一次添加太长时间</ul>
+            <ul>6. 本系统无需创建账号，人名请以邮箱前缀命名，比如sukie.gao,daniel.ma,etc</ul>
+        </p>
+    </div>
+</div>
+<!--
+<div class="container text-right">
+   <input type="submit" class='btn btn-success' value="update"  id=""  />
+</div>
+-->
+</body>
+</html>
